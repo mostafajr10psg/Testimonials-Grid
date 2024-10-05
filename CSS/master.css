@@ -1,0 +1,226 @@
+body {
+  min-height: 100vh;
+  background-color: hsl(212.73deg 44% 95.1%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+@media (max-width: 991px) {
+  body {
+    margin: 30px 0;
+  }
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-50: rgb(255 255 255 / 50%);
+  --color-70: rgb(255 255 255 / 70%);
+}
+
+main {
+  width: 90%;
+  display: grid;
+  column-gap: 30px;
+  row-gap: 25px;
+}
+
+@media (min-width: 992px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  main {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* Same Props In All Boxes */
+
+.box {
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+}
+
+.box .profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.box h1 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.box .profile img:first-of-type {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.box .profile .text {
+  font-size: 14px;
+}
+
+.box .profile h4 {
+  font-weight: normal;
+}
+
+.box .profile span {
+  font-size: 12px;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Same Props In All Boxes */
+
+/* Daniel */
+
+.daniel {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .daniel {
+    grid-column: span 2;
+  }
+}
+
+.daniel img:first-of-type {
+  border: 2px solid rgba(255 255 255 /50%);
+}
+
+.daniel span {
+  color: var(--color-50);
+}
+
+.daniel img:last-of-type {
+  position: absolute;
+  top: 0;
+  right: 100px;
+}
+
+@media (max-width: 991px) {
+  .daniel img:last-of-type {
+    right: 30px;
+  }
+}
+
+.daniel h1 {
+  position: relative;
+}
+
+.daniel p {
+  color: var(--color-50);
+}
+
+/* Jonathan */
+
+.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+
+.jonathan span {
+  color: var(--color-50);
+}
+
+.jonathan p {
+  color: var(--color-50);
+}
+
+/* Kira */
+
+.kira {
+  background-color: white;
+}
+
+@media (max-width: 991px) {
+  .kira {
+    order: 5;
+  }
+}
+
+@media (min-width: 992px) {
+  .kira {
+    grid-row: span 2;
+  }
+}
+
+.kira span {
+  color: rgb(0 0 0 / 50%);
+}
+
+.kira h1 {
+  color: #48556a;
+  font-weight: 600;
+}
+
+.kira p {
+  color: rgb(72 85 106 / 60%);
+}
+
+/* Jeanette */
+
+.jeanette {
+  background-color: white;
+}
+
+.jeanette span {
+  color: rgb(0 0 0 / 50%);
+}
+
+.jeanette h1 {
+  color: #48556a;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.jeanette p {
+  color: rgb(72 85 106 / 60%);
+}
+
+/* patrick */
+
+.patrick {
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .patrick {
+    grid-column: span 2;
+  }
+}
+
+.patrick img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.patrick span {
+  color: var(--color-50);
+}
+
+.patrick h1 {
+  color: rgb(255 255 255 / 85%);
+}
+
+.patrick p {
+  color: var(--color-50);
+}
